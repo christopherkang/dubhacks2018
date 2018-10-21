@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Intro to Stocks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="simple.css" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="simple.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <form id="stock" class="stock col s12">
+                <div class="row">
+                    <div class="input-field col s4 offset-s4 center-align">
+                        <input id="ticker" name="ticker" type="text" class="validate">
+                        <label for="ticker">Ticker</label>
+                        <a onclick="laugh()" class="waves-effect waves-light btn">refresh</a>
+                    </div>
+                </div>
+            </form>
+            <div class="col s12">
+                <div class="row">
+                    <p id="hiddenText">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
